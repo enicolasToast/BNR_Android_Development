@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:androclass="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:android="http://schemas.android.com/apk/res-auto"
+                androclass:layout_width="match_parent"
+                androclass:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            androclass:layout_width="match_parent"
+            androclass:layout_height="wrap_content"
+            androclass:orientation="horizontal"
+            androclass:paddingTop="4dip"
+            androclass:paddingStart="2dip"
+            androclass:paddingEnd="2dip"
+            androclass:measureWithLargestChild="true" androclass:layout_alignParentTop="true"
+            androclass:layout_alignParentLeft="true" androclass:layout_alignParentStart="true">
+        <TextView
+                androclass:layout_width="wrap_content"
+                androclass:layout_height="wrap_content"
+                androclass:layout_centerHorizontal="true"
+                androclass:layout_centerVertical="true"
+                style="?android:attr/buttonBarButtonStyle"
+                androclass:text="@string/hello_world" />
+    </LinearLayout>
+    <Button
+            androclass:text="Button1"
+            androclass:layout_width="wrap_content"
+            androclass:layout_height="wrap_content"
+            androclass:layout_marginTop="124dp" androclass:id="@+id/button" androclass:layout_alignParentLeft="true"
+            androclass:layout_alignParentStart="true" androclass:layout_alignParentRight="true"
+            androclass:layout_alignParentEnd="true"/>
+    <Button
+            androclass:text="Button2"
+            androclass:layout_width="wrap_content"
+            androclass:layout_height="wrap_content"
+            androclass:layout_marginTop="124dp"
+             androclass:layout_alignParentLeft="true"
+            androclass:layout_alignParentStart="true" androclass:layout_alignParentRight="true"
+            androclass:layout_alignParentEnd="true"
+            androclass:id="@+id/button2" androclass:visibility="gone"/>
+</RelativeLayout>
