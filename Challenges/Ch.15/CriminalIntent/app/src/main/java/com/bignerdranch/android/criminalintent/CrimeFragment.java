@@ -42,10 +42,10 @@ import static android.support.v4.content.PermissionChecker.PERMISSION_GRANTED;
 
 public class CrimeFragment extends Fragment {
     private static final String ARG_CRIME_ID = "crime_id";
+    private static final String EXTRA_CRIME_ID = "crime_id";
     private static final String DIALOG_DATE = "DialogDate";
     private static final int REQUEST_DATE = 0;
     private static final int REQUEST_CONTACT = 1;
-    private static final int REQUEST_CONTACT_PHONE = 2;
 
     private EditText mEditText;
     private Button mDateButton;
@@ -206,7 +206,7 @@ public class CrimeFragment extends Fragment {
 
             cursor.moveToFirst();
             String phoneNumber = cursor.getString(0);
-            mCrime.getSuspect().setPhone(phoneNumber);
+            mCrime.setSuspectPhone(phoneNumber);
         } finally {
             cursor.close();
         }
